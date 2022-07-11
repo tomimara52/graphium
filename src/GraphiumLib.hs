@@ -7,7 +7,7 @@ import Graphics.Gloss
 import Graphics.Gloss.Interface.IO.Interact
 
 start :: IO ()
-start = play window white 60 initialWorld render handle update
+start = play window white 30 initialWorld render handle update
 
 window :: Display 
 window = FullScreen 
