@@ -1,13 +1,13 @@
 {-# OPTIONS_GHC -Wno-incomplete-patterns #-}
-module GraphiumLib (start) where
+module GraphiumLib (start, adjTable) where
 
 import qualified Data.Map as M 
 import Data.List
 import Graphics.Gloss
 import Graphics.Gloss.Interface.IO.Interact
 
-start :: IO ()
-start = play window white 30 initialWorld render handle update
+start :: Graph -> IO ()
+start gr = play window white 30 (initialWorld gr) render handle update
 
 window :: Display 
 window = InWindow "Graphium" (300, 300) (0, 0) 
@@ -52,8 +52,9 @@ data World = World
   , draggedV :: Char 
   }
 
-initialWorld :: World 
-initialWorld = World { graphState = initialGraphState, isClicked = False, draggedV = 'x'}
+initialWorld :: Graph -> World 
+initialWorld gr = World { graphState = grState, isClicked = False, draggedV = 'x'}
+  where grState = createGraphState gr
 
 type GraphState = M.Map Char ([Char], (Float, Float))
 
