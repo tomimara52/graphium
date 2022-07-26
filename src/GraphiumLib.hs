@@ -10,7 +10,7 @@ start :: IO ()
 start = play window white 30 initialWorld render handle update
 
 window :: Display 
-window = FullScreen 
+window = InWindow "Graphium" (300, 300) (0, 0) 
 
 render :: World -> Picture 
 render world = pictures [graphEdges gr, graphVertices gr]
