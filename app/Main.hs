@@ -30,4 +30,13 @@ main = do
       let graph = M.fromList graphList
       putStrLn "\nThis is your graph:"
       putStr $ G.adjTable graph
-      G.start graph
+      putStrLn "Would you like to save this graph for future sessions? (y/n)"
+      answer2 <- getLine
+      if answer2 == "y"
+        then do
+          putStrLn "What do you want the file to be named?"
+          newFilename <- getLine
+          writeFile ("saved-graphs/" ++ newFilename) $ G.adjTable graph
+          G.start graph
+        else do
+          G.start graph
