@@ -1,5 +1,5 @@
 {-# OPTIONS_GHC -Wno-incomplete-patterns #-}
-module GraphiumLib (start, adjTable) where
+module GraphiumLib (start, startFromFile, adjTable) where
 
 import qualified Data.Map as M 
 import Data.Char (isDigit, isLetter)
