@@ -3,11 +3,17 @@
 
 * Installation
 
-  Download directory and run src_sh{cabal build}.
+  Download directory and run:
+  #+begin_src shell
+    cabal build 
+  #+end_src
 
 * Usage
 
-  Run src_sh{cabal run}.
+  Run:
+  #+begin_src shell
+    cabal run
+  #+end_src
 
 ** There are two initial choices:
 *** Load graph from file
@@ -17,12 +23,16 @@
   because gloss doesn't allow to return the world state after the play function has started.
 
   The format for the graph files is:
-  <v>| <vertices adjacents to v>
+  #+begin_comment
+    <v>| <vertices adjacents to v>
+  #+end_comment
 
   Example of the table of a 3 complete graph:
-  1| 23
-  2| 13
-  3| 12
+  #+begin_comment
+    1| 23
+    2| 13
+    3| 12
+  #+end_comment
   
 
   If you don't mind not saving the graph, you will be able to create it by clicking
