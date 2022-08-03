@@ -1,0 +1,31 @@
+#+title: graphium
+#+author: Tomás Maraschio
+
+* Installation
+
+  Download directory and run src_sh{cabal build}.
+
+* Usage
+
+  Run src_sh{cabal run}.
+
+** There are two initial choices:
+*** Load graph from file
+  You'll have to type the name of the file 
+*** Enter graph interactively
+  If you want to save the graph you enter to a file, you will have to type it manually,
+  because gloss doesn't allow to return the world state after the play function has started.
+
+  The format for the graph files is:
+  <v>| <vertices adjacents to v>
+
+  Example of the table of a 3 complete graph:
+  1| 23
+  2| 13
+  3| 12
+  
+
+  If you don't mind not saving the graph, you will be able to create it by clicking
+  where you want the vertices to be and then clicking the pairs of vertices that should
+  be adjacent.
+  
