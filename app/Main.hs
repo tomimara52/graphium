@@ -15,6 +15,8 @@ main = do
       filename <- getLine
       G.startFromFile $ "saved-graphs/" ++ filename
     else do
+      G.startEmpty
+      {--
       putStrLn "How many vertices do you want your graph to have?"
       nStr <- getLine
       let n = read nStr :: Int
@@ -40,3 +42,4 @@ main = do
           G.start graph
         else do
           G.start graph
+       --}

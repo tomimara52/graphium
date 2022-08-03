@@ -1,5 +1,5 @@
 {-# OPTIONS_GHC -Wno-incomplete-patterns #-}
-module GraphiumLib (start, startFromFile, adjTable) where
+module GraphiumLib (start, startFromFile, startEmpty, adjTable) where
 
 import qualified Data.Map as M 
 import Data.Char (isDigit, isLetter)
@@ -18,7 +18,7 @@ startFromFile filename = do
   start gr
 
 startEmpty :: IO ()
-startEmpty = play window white 60 initialWorldEmpty render handle update
+startEmpty = play window white 30 initialWorldEmpty render handle update
 
 window :: Display 
 window = InWindow "Graphium" (300, 300) (0, 0) 
