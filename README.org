@@ -17,14 +17,16 @@
 
 ** There are two initial choices:
 *** Load graph from file
-  You'll have to type the name of the file 
+  You'll have to type the name of the file.
 *** Enter graph interactively
   If you want to save the graph you enter to a file, you will have to type it manually,
   because gloss doesn't allow to return the world state after the play function has started.
 
   The format for the graph files is:
   #+begin_example
-    <v>| <vertices adjacents to v>
+    <v>| <vertices adjacent to v>
+    <u>| <vertices adjacent to u>
+    <w>| <vertices adjacent to w>
   #+end_example
 
   Example of the table of a 3 complete graph:
