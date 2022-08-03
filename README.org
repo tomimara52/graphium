@@ -23,16 +23,16 @@
   because gloss doesn't allow to return the world state after the play function has started.
 
   The format for the graph files is:
-  #+begin_comment
+  #+begin_example
     <v>| <vertices adjacents to v>
-  #+end_comment
+  #+end_example
 
   Example of the table of a 3 complete graph:
-  #+begin_comment
+  #+begin_example
     1| 23
     2| 13
     3| 12
-  #+end_comment
+  #+end_example
   
 
   If you don't mind not saving the graph, you will be able to create it by clicking
