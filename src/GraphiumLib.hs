@@ -128,6 +128,10 @@ createGraphState gr = M.fromList $ L.zipWith vertex [0..] $ M.keys gr
         edges k = M.findWithDefault "x" k gr
         vertex n k = (k, (edges k, (100 * cos (angle*n), 100 * sin (angle*n))))
 
+graphStateToGraph :: GraphState -> Graph
+graphStateToGraph grSt = M.fromList $ L.map dropPos $ M.toList grSt
+  where dropPos (k, (v, _)) = (k, v)
+
 initialGraphState :: GraphState 
 initialGraphState = createGraphState myGraph
 
