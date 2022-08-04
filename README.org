@@ -41,3 +41,17 @@
   where you want the vertices to be and then clicking the pairs of vertices that should
   be adjacent.
   
+
+* Screenshots
+
+#+CAPTION: How the vertices are created
+#+NAME:   fig:img1
+[[./screenshots/creatingVertices.jpg]]
+
+#+CAPTION: How the vertices are joined 
+#+NAME:   fig:img2
+[[./screenshots/joiningVertices.jpg]]
+
+#+CAPTION: How the vertices are moved
+#+NAME:   fig:img3
+[[./screenshots/arrangingVertices.jpg]]
