@@ -44,27 +44,18 @@
 
 * Screenshots
 
+** How the vertices are created
 #+CAPTION: How the vertices are created
 #+NAME:   fig:img1
 [[./screenshots/creatingVertices.jpg]]
-#+begin_center
-  How the vertices are created
-#+end_center
 
-
+** How the vertices are joined 
 #+CAPTION: How the vertices are joined 
 #+NAME:   fig:img2
 [[./screenshots/joiningVertices.jpg]]
-#+begin_center
-  How the vertices are joined 
-#+end_center
 
-
+** How the vertices are moved
 #+CAPTION: How the vertices are moved
 #+NAME:   fig:img3
 [[./screenshots/arrangingVertices.jpg]]
-#+begin_center
-  How the vertices are moved
-#+end_center
-
 
