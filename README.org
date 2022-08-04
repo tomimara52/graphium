@@ -45,13 +45,13 @@
 * Screenshots
 
 ** How the vertices are created
-./gifs/createVertices.gif
+#+html: <p align="center"><img src="./gifs/createVertices.gif" /></p>
 
 
 ** How the vertices are joined 
-./gifs/joinVertices.gif
+#+html: <p align="center"><img src="./gifs/joinVertices.gif" /></p>
 
 
 ** How the vertices are moved
-./gifs/moveVertices.gif
+#+html: <p align="center"><img src="./gifs/moveVertices.gif" /></p>
 
