@@ -1,4 +1,3 @@
-{-# OPTIONS_GHC -Wno-incomplete-patterns #-}
 module GraphiumLib (start, startFromFile, startEmpty, adjTable) where
 
 import qualified Data.Map as M 
