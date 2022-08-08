@@ -155,11 +155,6 @@ displayMode world
 type Graph = M.Map Char [Char] 
 
 myGraph :: Graph 
-{--
-myGraph = M.fromList [ ('a', "b"), ('b', "ade"), ('c', "cf"), ('d', "bf")
-                     , ('e', "cb"), ('f', "dc") 
-                     ]
---}
 myGraph = M.fromList [ ('0', "23"), ('1', "34"), ('2', "04"), ('3', "01"), ('4', "12") ]
 
 adjTable :: Graph -> String 
